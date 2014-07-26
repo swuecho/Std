@@ -1,5 +1,7 @@
 package Std;
 our $VERSION = '0.03';
+# todo more stable version of this
+# remove dependency to Syntax::Collector
 use v5.20;
 use Syntax::Collector -collect => q/
 use strict           1.00         ;
