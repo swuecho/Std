@@ -5,7 +5,7 @@ requires 'Git::Raw';
 requires 'Exporter::Auto';
 requires 'JSON';
 requires 'Text::Xslate';
-requires 'Net::MW::API';
+requires 'WebService::MerriamWebster';
 requires 'LWP::Simple';
 requires 'Email::Stuffer';
 requires 'Mojolicious';
