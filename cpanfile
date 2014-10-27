@@ -11,6 +11,8 @@ requires 'Email::Stuffer';
 requires 'Mojolicious';
 requires 'Dancer2'; 
 requires 'IPC::System::Simple';
+requires 'Syntax::Collector';
+requires 'Data::Printer';
 
 
 # You can install modules using cpanfile in current directory by --installdeps option of cpanm.
