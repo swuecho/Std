@@ -1,4 +1,4 @@
-package Num;
+package Math;
 
 require POSIX;
 
@@ -13,6 +13,9 @@ sub round {
 
 require Scalar::Util;
 *is_number = \&Scalar::Util::looks_like_number;
+
+# is_number($_[0])
+#  <=> $_[0]->is_number
 
 sub is_positive { $_[0]->is_number && $_[0] > 0 }
 sub is_negative { $_[0]->is_number && $_[0] < 0 }

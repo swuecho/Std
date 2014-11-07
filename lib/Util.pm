@@ -4,8 +4,6 @@ use HTTP::Tiny;
 use Path::Tiny;
 use Exporter::Auto;
 
-sub is_upper { shift =~ /[A-Z]/ }
-
 sub get_text($path) {
     path($path)->slurp;
 }
@@ -25,23 +23,7 @@ sub get_content($str) {
     }
 }
 
-#==
-# split string to words
-#==
-sub words($content) {
-    split( /\W+/, $content );
-}
 
-#==
-# get frequecy hash from list
-#==
-sub frequency(@words) {
-    my %words_dic;
-    foreach (@words) {
-        $words_dic{$_}++;
-    }
-    return %words_dic;
-}
 
 #==
 ## sort key by value in hash
