@@ -5,7 +5,7 @@ use LWP::UserAgent;
 has 'host' => ( is => 'ro' );
 has 'port' => ( is => 'ro' );
 
-has 'base_url' => (
+has 'base' => (
     is      => 'ro',
     lazy    => 1,
     builder => sub {
