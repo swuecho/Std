@@ -1,6 +1,7 @@
 # third part module I use
 requires 'Moose';
-requres  'Set::Scalar';
+requires 'Set::Scalar';
+requires 'IO::Scalar';
 requires 'Git::Raw';
 requires 'Exporter::Auto';
 requires 'JSON';
@@ -8,6 +9,8 @@ requires 'Text::Xslate';
 requires 'WebService::MerriamWebster';
 requires 'LWP::Simple';
 requires 'Email::Stuffer';
+
+# web framework
 requires 'Mojolicious';
 requires 'Dancer2'; 
 
