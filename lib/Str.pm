@@ -18,4 +18,12 @@ sub trim($string,$trim_charset = '\s') {
     return rtrim( ltrim( $string, $trim_charset ), $trim_charset );
 }
 
+#==
+# split string to words
+#==
+sub words($content) {
+    split( /\W+/, $content );
+}
+
+
 1;

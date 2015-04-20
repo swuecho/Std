@@ -13,6 +13,9 @@ requires 'Email::Stuffer';
 # web framework
 requires 'Mojolicious';
 requires 'Dancer2'; 
+requires 'IPC::System::Simple';
+requires 'Syntax::Collector';
+requires 'Data::Printer';
 
 
 # You can install modules using cpanfile in current directory by --installdeps option of cpanm.
@@ -22,3 +25,7 @@ requires 'Dancer2';
 # You can also install modules into specified directory by -L option.
 #
 # cpanm -L extlib --installdeps .
+
+# README
+
+# run  sudo apt-get install libxml2-dev first to install libxml
