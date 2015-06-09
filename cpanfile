@@ -1,3 +1,7 @@
+# import::into
+
+requires 'Import::Into';
+
 # third part module I use
 requires 'Moose';
 requires 'Set::Scalar';
@@ -11,11 +15,15 @@ requires 'LWP::Simple';
 requires 'Email::Stuffer';
 
 # web framework
-requires 'Mojolicious';
 requires 'Dancer2'; 
+
 requires 'IPC::System::Simple';
-requires 'Syntax::Collector';
+
+
+# debug
 requires 'Data::Printer';
+# tidy 
+requires 'Code::TidyAll';
 
 
 # You can install modules using cpanfile in current directory by --installdeps option of cpanm.
@@ -25,7 +33,14 @@ requires 'Data::Printer';
 # You can also install modules into specified directory by -L option.
 #
 # cpanm -L extlib --installdeps .
-
+# 
+# install to ~/perl5/lib/ 
+#
+# cpanm -L ~/perl5  Data::Printer
+#
+# add Std and perl5 to PERL5LIB
+#
+# export PERL5LIB=$PERL5LIB:~/Std/lib/:/home/hwu/perl5/lib/perl5
 # README
 
 # run  sudo apt-get install libxml2-dev first to install libxml
