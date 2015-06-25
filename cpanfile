@@ -13,6 +13,8 @@ requires 'Text::Xslate';
 requires 'WebService::MerriamWebster';
 requires 'LWP::Simple';
 requires 'Email::Stuffer';
+requires 'Log::Log4perl';
+requires 'App::Git::Workflow';
 
 # web framework
 requires 'Dancer2'; 
@@ -24,6 +26,8 @@ requires 'IPC::System::Simple';
 requires 'Data::Printer';
 # tidy 
 requires 'Code::TidyAll';
+
+
 
 
 # You can install modules using cpanfile in current directory by --installdeps option of cpanm.

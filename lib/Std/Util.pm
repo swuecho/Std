@@ -1,9 +1,19 @@
-package Echo::Util;
-use experimental 'signatures';
+package Std::Util;
+use Std;
 use HTTP::Tiny;
 use Path::Tiny;
 use Exporter::Auto;
+use Data::Dumper;
+use File::Temp qw/ tempfile /;
+ 
+sub dd($ref) {
+    my ($fh, $filename) = tempfile();
+    $fh->print(Dumper($ref));
+    say "dd result is in [$filename]";
+}
 
+1;
+__END__
 sub get_text($path) {
     path($path)->slurp;
 }
@@ -22,8 +32,6 @@ sub get_content($str) {
         get_text($str);
     }
 }
-
-
 
 #==
 ## sort key by value in hash
