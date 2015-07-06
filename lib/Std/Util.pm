@@ -12,7 +12,19 @@ sub dd($ref) {
     say "dd result is in [$filename]";
 }
 
+#==
+## sort key by value in hash
+#==
+sub hash_sort (%dic) {
+    my @sorted;
+    foreach ( sort { $dic{$b} <=> $dic{$a} } ( keys %dic ) ) {
+        push @sorted, [ $_, $dic{$_} ];
+    }
+    return @sorted;
+}
+
 1;
+
 __END__
 sub get_text($path) {
     path($path)->slurp;
@@ -33,18 +45,6 @@ sub get_content($str) {
     }
 }
 
-#==
-## sort key by value in hash
-#==
-sub hash_sort (%dic) {
-    my @sorted;
-    foreach ( sort { $dic{$b} <=> $dic{$a} } ( keys %dic ) ) {
-        push @sorted, [ $_, $dic{$_} ];
-    }
-    return @sorted;
-}
-
-1;
 
 # export
 #use Exporter (qw/import/);
