@@ -2,15 +2,18 @@
 
 requires 'Import::Into';
 
+# web request
+
+
 # third part module I use
 requires 'Moose';
+requires 'Time::Moment';
 requires 'Set::Scalar';
 requires 'IO::Scalar';
 requires 'Git::Raw';
 requires 'Exporter::Auto';
 requires 'JSON';
 requires 'Text::Xslate';
-requires 'WebService::MerriamWebster';
 requires 'LWP::Simple';
 requires 'Email::Stuffer';
 requires 'Log::Log4perl';
@@ -26,6 +29,9 @@ requires 'IPC::System::Simple';
 requires 'Data::Printer';
 # tidy 
 requires 'Code::TidyAll';
+
+# RSS
+requires 'XML::RSS::Parser';
 
 
 
@@ -48,3 +54,5 @@ requires 'Code::TidyAll';
 # README
 
 # run  sudo apt-get install libxml2-dev first to install libxml
+#
+# cpanm -L ~/perl5 --installdeps .
