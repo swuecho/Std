@@ -14,7 +14,7 @@ sub rtrim($string,$trim_charset = '\s') {
     return $string;
 }
 
-sub trim($string,$trim_charset = '\s') {
+sub trim($string, $trim_charset = '\s') {
     return rtrim( ltrim( $string, $trim_charset ), $trim_charset );
 }
 
