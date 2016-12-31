@@ -3,11 +3,11 @@ use Test::More tests => 2;
 
 # 1 + r + r^2
 # future value
-sub fv ($rate, $nper, $pmt) {
+sub fv ( $rate, $nper, $pmt ) {
     ( ( 1 + $rate )**$nper - 1 ) / $rate * $pmt;
 }
 
-sub ear($rate, $nper) {
+sub ear ( $rate, $nper ) {
     ( 1 + $rate / $nper )**$nper - 1;
 }
 
