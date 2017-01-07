@@ -25,5 +25,13 @@ sub words($content) {
     split( /\W+/, $content );
 }
 
+#==
+# copied from  https://metacpan.org/source/XSAWYERX/App-UnANSI-0.003/lib/App/UnANSI.pm 
+#==
+sub remove_ansi_colors {
+        $_[1] =~ s{\x1b\[[^m]*m}{}sgmx;
+        return 1;
+}
+
 
 1;
