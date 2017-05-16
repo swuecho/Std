@@ -33,7 +33,8 @@ requires 'Code::TidyAll';
 # RSS
 requires 'XML::RSS::Parser';
 
-
+# Chinese
+requires 'Lingua::ZH::Jieba'; 
 
 
 # You can install modules using cpanfile in current directory by --installdeps option of cpanm.
