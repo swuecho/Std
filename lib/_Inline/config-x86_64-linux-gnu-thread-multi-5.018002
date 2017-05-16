@@ -1,0 +1,32 @@
+version : 0.80
+languages : %
+    C : C
+    C++ : CPP
+    CPP : CPP
+    CXX : CPP
+    Cplusplus : CPP
+    Foo : Foo
+    PYTHON : Python
+    Python : Python
+    c++ : CPP
+    cplusplus : CPP
+    cpp : CPP
+    cxx : CPP
+    foo : Foo
+    py : Python
+    python : Python
+types : %
+    C : compiled
+    CPP : compiled
+    Foo : interpreted
+    Python : interpreted
+modules : %
+    C : Inline::C
+    CPP : Inline::CPP
+    Foo : Inline::Foo
+    Python : Inline::Python
+suffixes : %
+    C : so
+    CPP : so
+    Foo : foo
+    Python : pydat
