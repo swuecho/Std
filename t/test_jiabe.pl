@@ -6,4 +6,4 @@ my $sentence = "他来到了网易杭研大厦";
 use DDP;
 p $sentence;
 say $sentence;
-p $_->[0] for Jieba::jieba_tokenize($sentence);
+p $_ for Jieba::jieba_tokenize($sentence);
