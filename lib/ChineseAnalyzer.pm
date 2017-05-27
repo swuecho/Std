@@ -30,7 +30,8 @@ sub transform_text {
     $inversion->append(
        Lucy::Analysis::Token->new(text =>$_->[0],
                                   start_offset=> $_->[1] ,
-                                  end_offset=>$_->[2] 
+                                  # end_offset + start_offset + size
+                                  end_offset=> $_->[1] + $_->[2] 
         )
         
     ) for @$tokens;
