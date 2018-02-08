@@ -18,9 +18,12 @@ requires 'LWP::Simple';
 requires 'Email::Stuffer';
 requires 'Log::Log4perl';
 requires 'App::Git::Workflow';
+# DB
+requires 'Redis';
 
 # web framework
 requires 'Dancer2'; 
+requires 'Mojolicious';
 
 requires 'IPC::System::Simple';
 
@@ -35,6 +38,11 @@ requires 'XML::RSS::Parser';
 
 # Chinese
 requires 'Lingua::ZH::Jieba'; 
+
+#WWW
+requires 'WWW::Mailgun';
+
+requires 'Params::Util';
 
 
 # You can install modules using cpanfile in current directory by --installdeps option of cpanm.
